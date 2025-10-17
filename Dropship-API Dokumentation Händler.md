@@ -525,48 +525,38 @@ Bei einem erfolgreichen Aufruf wird eine Bestellung in unser System eingetragen.
 
 **InnoCigs Dropship-API** | Innocigs GmbH & Co. KG, Barnerstraße 14c, 22765 Hamburg | Seite 13
 
----
----
-# Felder im Dropship-Request-XML:
+### Felder im Dropship-Request-XML:
 
-|DROPSHIP|Container für Dropship| |
+| Feld | Verwendung | Beschreibung |
 |---|---|---|
-|DATA|Container für Stammdaten| |
-| |Dropship| |
-|SHIPPER|Container für Absender| |
-|RECEIVER|Container für Empfänger| |
-|ORDERS_NUMBER|eigene Bestellnummer| |
-|COMPANY|Firma|Max. 30 Zeichen,|
-| |Absender/Empfänger(Bei|Versender-Firma min. 3|
-| |Zeichen| |
-|COMPANY2|Adresszeile2|Max. 30 Zeichen. Firma und|
-| |Absender/Empfänger|(optional)|
-| |max 34 Zeichen, Wenn an|eine Packstation gesendet|
-| |wird| |
-|FIRSTNAME|Vorname|Min. 2 Zeichen, Vorname|
-| |Absender/Empfänger|und Nachname zusammen|
-| |max. 34 Zeichen| |
-|LASTNAME|Nachname|Min. 2 Zeichen, Vorname|
-| |Absender/Empfänger|und Nachname zusammen|
-| |max. 34 Zeichen| |
-|STREET_ADDRESS|Strasse Hausnummer|Straße mit Hausnummer,|
-| |Absender/Empfänger|Min. 5 und max. 35 Zeichen|
-|POSTCODE|PLZ Absender/Empfänger|Min. 4 Zeichen|
-|CITY|Stadt Absender/Empfänger|Min. 3 Zeichen|
-|COUNTRY_CODE|Land als|ISO-3166-1-Alpha-2-CODE|
-| |Absender/Empfänger| |
-|EMAIL|E-Mail-Adresse des|gültiges e-Mail Format, min.|
-| |Absenders/ (Empfängers)|6 Zeichen, Empfänger|
-| |optional für|Sendungsbenachrichtigung|
-|TELEPHONE|Telefonnummer des|Absenders(optional)|
-|BIRTHDAY|Geburtsdatum des|Deutsches Format, z.b.|
-| |Dropship-Empfängers|23.6.1989|
+| **DROPSHIP** | Container für Dropship | |
+| **DATA** | Container für Stammdaten Dropship | |
+| **SHIPPER** | Container für Absender | |
+| **RECEIVER** | Container für Empfänger | |
+| **ORDERS_NUMBER** | eigene Bestellnummer | |
+| **COMPANY** | Firma Absender/Empfänger(Bei | Max. 30 Zeichen, Versender-Firma min. 3 Zeichen |
+| **COMPANY2** | Adresszeile2 Absender/Empfänger (optional) | Max. 30 Zeichen. Firma und Adresszeile 2 zusammen max 34 Zeichen, Wenn an eine Packstation gesendet wird |
+| **FIRSTNAME** | Vorname Absender/Empfänger | Min. 2 Zeichen, Vorname und Nachname zusammen max. 34 Zeichen |
+| **LASTNAME** | Nachname Absender/Empfänger | Min. 2 Zeichen, Vorname und Nachname zusammen max. 34 Zeichen |
+| **STREET_ADDRESS** | Strasse Hausnummer Absender/Empfänger | Straße mit Hausnummer, Min. 5 und max. 35 Zeichen |
+| **POSTCODE** | PLZ Absender/Empfänger | Min. 4 Zeichen |
+| **CITY** | Stadt Absender/Empfänger | Min. 3 Zeichen |
+| **COUNTRY_CODE** | Land als Absender/Empfänger | ISO-3166-1-Alpha-2-CODE |
+| **EMAIL** | E-Mail-Adresse des Absenders/ (Empfängers) optional für | gültiges e-Mail Format, min. 6 Zeichen, Empfänger Sendungsbenachrichtigung |
+| **TELEPHONE** | Telefonnummer des | Absenders(optional) |
+| **BIRTHDAY** | Geburtsdatum des Dropship-Empfängers | Deutsches Format, z.b. 23.6.1989 |
+| **PRODUCTS** | Container für Produkte Dropship | |
+| **PRODUCT** | Container für Produkt | |
+| **PRODUCTS_MODEL** | Artikelnummer | |
+| **QUANTITY** | Anzahl | |
 
-# InnoCigs Dropship-API
+---
 
-Innocigs GmbH & Co. KG, Barnerstraße 14c, 22765 Hamburg
+**InnoCigs Dropship-API** | Innocigs GmbH & Co. KG, Barnerstraße 14c, 22765 Hamburg | Seite 14
 
-Seite: 14
+---
+
+### Beispiel: Inhalt von einem Post-Request:
 ---
 # InnoCigs Dropship-API
 
